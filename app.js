@@ -59,8 +59,8 @@ app.post("/failure", function (req, res) {
   res.redirect("/");
 });
 
-app.listen("3001", function () {
-  console.log("Server is running on port 3001! 🚀🚀🚀");
+app.listen(process.env.PORT || 3000, function () {
+  console.log("Server is running on port 3000! 🚀🚀🚀");
 });
 
 //a9dddbdb27aa180ef6aa7896c080db34-us14
